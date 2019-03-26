@@ -1,0 +1,10 @@
+/* REXX */
+
+SAY 'Enter the first number'
+    PULL num1
+SAY 'Enter the second number'
+    PULL num2
+
+mult = num1 * num2
+
+SAY 'The multiplication of the two numbers is 'mult'.'

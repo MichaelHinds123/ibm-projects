@@ -1,0 +1,12 @@
+/* REXX */
+
+/***************************************/   
+/***A program to allocate a data set****/
+/***************************************/
+
+SAY 'Please enter your new data set name'
+PULL DataSetName
+
+"alloc dataset('" || DataSetName || "')",
+"volume(VPWRKB) dsorg(PS)",
+"space(1,1) recfm(F,B) lrecl(80) track blksize(27920)"
